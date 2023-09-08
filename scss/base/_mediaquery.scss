@@ -261,7 +261,7 @@
 
 
 
-
+/*NOSOTROS*/
 
 @media screen and (max-width: 1200px) {
     .nosotros-info {
@@ -307,6 +307,13 @@
       }
     }
   }
+
+
+
+
+
+
+
 
   /*PRODUCTOS*/
   .Contacto {
@@ -359,6 +366,17 @@
       }
     }
   }  
+
+
+
+
+
+
+
+
+
+
+  /*PRODUCTOS*/
   @media screen and (max-width: 980px) {
     .PP .header-content {
       flex-direction: column;
@@ -499,8 +517,8 @@
     .PP .general-content {
       display: flex;
       flex-direction: column;
-      justify-content: center; /* Center horizontally */
-      align-items: center; /* Center vertically */
+      justify-content: center; 
+      align-items: center; 
   
       .general-txt {
         width: 400px;
