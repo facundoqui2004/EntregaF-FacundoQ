@@ -902,6 +902,21 @@ hr {
   .product .product-info {
     grid-template-columns: repeat(1, 1fr); } }
 
+@media screen and (max-width: 901px) {
+  body .gallery {
+    width: 100%;
+    height: 500px; }
+    body .gallery img {
+      width: 0px;
+      flex-grow: 1;
+      object-fit: cover;
+      filter: brightness(80%);
+      transition: .7S ease; }
+    body .gallery img:hover {
+      width: 350px;
+      opacity: 1;
+      filter: brightness(80%); } }
+
 /*PRODUCTOS*/
 @media screen and (max-width: 1000px) {
   .Contacto body {
