@@ -113,34 +113,13 @@
         }
       }
     }
-    .products {
-      padding: 30px;
-      text-align: center;
-      h2 {
-        font-size: 40px;
-      }
-      p {
-        font-size: 20px;
-        padding: 0;
-        margin-bottom: 40px;
-      }
-      .product-info {
-        grid-template-columns: repeat(1, 1fr);
-        p {
-          padding: 30px;
-        }
-      }
-      .product {
-        img {
-          width: 200px;
-          height: 300px;
-        }
-        
-      }
+    .general-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
   } 
-  }
-  @media screen and (max-width: 991px) {
+}
+  @media screen and (max-width: 1070px) {
     .menu {
       padding: 30px;
       label {
@@ -247,35 +226,21 @@
           }
         }
       }
-      .products {
-        padding: 30px;
-        text-align: center;
-        h2 {
-          font-size: 40px;
-        }
-        p {
-          font-size: 20px;
-          padding: 0;
-          margin-bottom: 40px;
-        }
-        .product-info {
-          grid-template-columns: repeat(2, 1fr);
-          p {
-            padding: 30px;
-          }
-          width: 350px;
-          
-          .product {
-            img {
-              width: 300px;
-              height: 250px;
-            }
-            
-            
-          }
-        }
-        
+      .general-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
       }
+    } 
+  }
+  @media screen and (max-width: 993px) {
+    body{
+      .general-content {
+        display: grid;
+        grid-template-columns: repeat(2, 0.5fr);
+        width: 80%;
+        justify-content: center;
+      } 
     }
   }
   @media screen and (max-width: 770px) {
@@ -380,37 +345,14 @@
         }
       }
     }
-    .products {
-      padding: 30px;
-      text-align: center;
-      align-items: center;
-    
-      h2 {
-        font-size: 40px;
-      }
-    
-      p {
-        font-size: 20px;
-        padding: 0;
-        margin-bottom: 40px;
-      }
-    
-      .product-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centra verticalmente */
-        justify-content: center; /* Centra horizontalmente */
-        width: 400px;
-    
-        .product {
-          img {
-            width: 300px;
-            height: 300px;
-          }
-        }
-      }
+    .menu-p1 .general-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center; 
     } 
-}}
+  }
+}
 
 
 
